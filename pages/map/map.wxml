@@ -1,0 +1,10 @@
+<view class="map-container" style="height: {{mapHeight}}px; width: {{mapWidth}}px">
+  <map id="map" longitude="-76.7086887360" latitude="37.2765457035" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}"  bindcallouttap="calloutTap" bindregionchange="regionchange" show-location="true" style="height: 100%; width: 100%"></map>
+</view>
+<view class="bottom-container" style="height: {{bottomHeight}}px; width: {{bottomWidth}}px">
+  <button bindtap="clearTap" type="warn" size="mini" style="width: 30%; float: right; margin: 10px 5%">Clear</button>
+  <view class="switch-container" style="height: 100%; width: 60%; float: left">
+    <text style="float:left; padding-top:15px; padding-left: 10%">Trajectory</text>
+    <switch bindchange="switchChange" type="switch" style="float: right; padding:8px" />
+  </view>
+</view>
