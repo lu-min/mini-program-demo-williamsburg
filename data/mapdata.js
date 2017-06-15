@@ -8,6 +8,7 @@ var data = {
       longitude: -76.7134094238,
       width: 32,                      //size of the icon
       height: 32,
+      anchor: { x: 0.5, y: 1 },       //postion of the anchor point of the icon (0 <= x, y <= 1)
       title: "College of William & Mary", //title of the POI
       imageUrl: "http://www.wm.edu/offices/hr/_widgets/wren_building/wren1.jpg" //additional attribute, for displaying a photo in the "poi" page
     },
@@ -18,6 +19,7 @@ var data = {
       longitude: -76.7066717148,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 0.5 },
       title: "Colonial Williamsburg's Merchants Square",
       imageUrl: "http://www.merchantssquare.org/images/map/map_merchants_square.gif"
     },
@@ -28,6 +30,7 @@ var data = {
       longitude: -76.7002344131,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 1 },
       title: "Williamsburg Historic Distric",
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/d/dd/Bruton_Church%2C_Williamsburg.JPG"
     },
@@ -38,6 +41,7 @@ var data = {
       longitude: -76.7086887360,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 1 },
       title: "Williamsburg Transportation Center",
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/0/02/Williamsburg_depot.jpg"
     },
@@ -48,6 +52,7 @@ var data = {
       longitude: -76.7020690441,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 0.5 },
       title: "Governor's Palace",
       imageUrl: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Colonial_Williamsburg_Governor%27s_Palace_Main_Building.JPG/1024px-Colonial_Williamsburg_Governor%27s_Palace_Main_Building.JPG"
     },
@@ -58,6 +63,7 @@ var data = {
       longitude: -76.7014360428,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 1 },
       title: "Great Hopes Plantation",
       imageUrl: "http://www.history.org/Almanack/places/hb/images/444178-1_lg.jpg"
     },
@@ -68,6 +74,7 @@ var data = {
       longitude: -76.6986894608,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 0.5 },
       title: "Colonial Williamsburg Visitor Center",
       imageUrl: "https://res.cloudinary.com/colonialwilliamsburg/image/upload/ar_3:2,c_fill,w_600,q_auto:eco,g_auto:faces/buildings/vc-front.jpg"
     },
@@ -78,6 +85,7 @@ var data = {
       longitude: -76.7205333710,
       width: 32,
       height: 32,
+      anchor: { x: 0.5, y: 0.5 },
       title: "Williamsburg Shopping Center",
       imageUrl: "http://cdn.visitwilliamsburg.com/sites/default/master/files/styles/3_2_x-large/public/profiles/photos/logo/listing_3069--6475.jpg?itok=dkSx7Y2p"
     }
