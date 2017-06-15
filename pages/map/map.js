@@ -18,9 +18,9 @@ var controls = [{
   clickable: true   //is the control clickable
 }]
 
-//array of trajectories for displaying polylines in the map module
-var trajectories = []
-var trajectoryRecordEnabled = false; //flag of enable/disable trajectory recording
+var trajectories = []   //array of trajectories for displaying polylines in the map module
+var trajectoryRecordEnabled = false //flag of enable/disable trajectory recording
+var timer   //for the loop of recording locations
 
 //function to record the current location every ten seconds
 function recordEveryTenSeconds(that) {
@@ -33,7 +33,7 @@ function recordEveryTenSeconds(that) {
   that.recordLocation();
 
   //callback this function every 10s (10000ms) until disabled
-  setTimeout(function () {
+  timer = setTimeout(function () {
     recordEveryTenSeconds(that);
   }, 10000)
 }
@@ -167,21 +167,22 @@ Page({
     //if the trajectory recording is enabled
     if (trajectoryRecordEnabled) {
       //initialize a new trajectory (empty)
-      var trajectory = [{
+      var trajectory = {
         points: [],           //coordinates of the recorded locations in {longitude, latitude}
         color: "#115740DD",   //the official color of William & Mary
         width: 3,             //line width
         dottedLine: true      //dotted line (true) or solid line (false)
-      }]
+      }
 
       //add the trajectory to the array "trajectories"
       trajectories.push(trajectory)
 
       //start recording the current location every ten seconds
       recordEveryTenSeconds(this)
-    }
-    //if the trajectory recording is disabled
-    //function "recordEveryTenSeconds" will return at the beginning
+    } else {
+      //if the trajectory recording is disabled, stop the loop
+      clearTimeout(timer)
+    }    
   },
 
   //get current location using API, display on the map and record in the local storage
@@ -192,16 +193,22 @@ Page({
     //see "https://mp.weixin.qq.com/debug/wxadoc/dev/api/location.html#wxgetlocationobject"
     wx.getLocation({
       success: function(res) {
+        //get coordinates from the result "res"
         var point = {
           latitude: res.latitude,
           longitude: res.longitude,
         }
+
+        //add the point to the last trajectory in the array "trajectories"
         var lastIdx = trajectories.length - 1
-        trajectory[lastIdx].points.push(point)
+        trajectories[lastIdx].points.push(point)
+
+        //update the page data to refresh the map
         that.setData({
           polyline:trajectories
         })
-        console.log(trajectories);
+        
+        //update the local storage
         wx.setStorage({
           key: 'trajectories',
           data: trajectories,
