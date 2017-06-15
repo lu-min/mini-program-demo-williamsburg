@@ -199,7 +199,7 @@ Page({
           longitude: res.longitude,
         }
 
-        //add the point to the last trajectory in the array "trajectories"
+        //add the point to the last trajectory in the array "trajectories" 
         var lastIdx = trajectories.length - 1
         trajectories[lastIdx].points.push(point)
 
