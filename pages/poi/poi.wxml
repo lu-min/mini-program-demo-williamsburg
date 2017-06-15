@@ -1,0 +1,5 @@
+<!--poi.wxml-->
+<view class="poi-container">
+  <text>{{title}}</text>
+  <image mode="aspectFit" style="padding-top: 60px; width:100%;" src="{{imageUrl}}"></image>
+</view>
