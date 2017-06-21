@@ -8,9 +8,24 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 2. Click [windows 64](https://servicewechat.com/wxa-dev-logic/download_redirect?type=x64), [windows 32](https://servicewechat.com/wxa-dev-logic/download_redirect?type=ia32), or [mac](https://servicewechat.com/wxa-dev-logic/download_redirect?type=darwin) to download the installation program according to your system (you can also click the links here to download them)
 
 ### Installation on macOS
+1. Open the downloaded .dmg file.
+2. Drag the app to the application folder.
+3. Find the following icon in the application folder or Launchpad.
 
 ### Installation on Windows
-Modify the folder to install from some messy characters to English
+1. Open the downloaded .exe file. If your system language is not Chinese, you may see messy characters, but the installation can still be completed.
+2. Click the following buttons to process.
+3. Modify the install folder from some messy characters to English, and then click the button to install.
+4. Find the following icon on your desktop.
+
+## How to become a developer of Mini Program and get an AppID
+
+**UNFORTUNATELY**, Mini Program registration is not open to foreigners yet. However, as one Mini Program developer's account can bind multiple developers, we can still experience programming Mini Programs by binding your WeChat IDs to our prepared developer's accounts.
+1. Submit your WeChat ID and Email address to us using this [Google Form](https://goo.gl/forms/ozCPPoez2gVE3qrY2). (See [How to setup a WeChat ID?](https://github.com/lu-min/mini-program-demo-williamsburg/blob/master/WeChat%20Q%26A.md#how-to-setup-a-wechat-id) if you do not know your id yet.)
+2. We will bind your WeChat ID to a developer's account, and a request of confirmation (in Chinese) will be automatically sent to your WeChat. Please confirm the request as the following figures, and the binding will be completed.
+3. We will send the AppID to your Email address after completing the binding.
+
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/miniprogram-binding.png)
 
 ## How to open this demo in the developer's tool
 
@@ -30,7 +45,7 @@ Modify the folder to install from some messy characters to English
 
 ## Why the map is not correctly displayed in the preview
 
-The map API of WeChat uses Tencent Maps by default, which only provides detailed data in China. In WeChat app, it will automatically switch to Bing Maps, if the user is out of China. However, in the preview of the developer's tool, only Tencent Maps is available.
+The map API of WeChat uses ***Tencent Maps*** by default, which only provides detailed data in China. In WeChat app, it will automatically switch to ***Bing Maps***, if the user is out of China. However, in the preview of the developer's tool, only Tencent Maps is available.
 
 If the demo is previewed in a smartphone, the map should be correctly displayed.
 
