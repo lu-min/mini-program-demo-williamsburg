@@ -14,12 +14,29 @@ Other platforms: visit the [offcial website](http://www.wechat.com)
 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup01.jpg)
    
-2. Enter your mobile phone number. Choose the correct Country/Region of your mobile phone number
+2. Enter your mobile phone number. Choose the correct Country/Region of your mobile phone number.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup02.jpg)
+   
 3. Tap "Sign Up", and it will prompt that a verfication code will be sent to the mobile phone number through SMS. Tap "OK".
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup03.jpg)
+   
 4. Input the verification code you recieve in the SMS, and tap "Submit". If you cannot receive the SMS, there will be a button to resend a message.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup04.jpg)
+   
 5. Complete the profile, including an avatar image/photo and a name.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup05.jpg)
+   
 6. Some notification about using your address book will show, choose as you like.
+   
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup06.jpg)
+   
 7. You will see the following interface when you finish registration.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatsignup07.jpg)
 
 ## How to setup a WeChat ID?
 
