@@ -44,9 +44,18 @@ A WeChat ID is needed to bind the WeChat account as a developer. By default, a n
 
 1. Choose the tab "Me", and tap on your avatar. It will lead to your profile.
 2. Tap the item "WeChat ID (Not Set)"
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatid01_02.jpg)
+
 3. Input a unique WeChat ID, tap "Save" and confirm.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatid03.jpg)
+
 4. When the setting of WeChat ID is succeeded, you can set a password for your account. After that, you can log in with the WeChat ID and password in the future.
-5. The WeChat ID can be checked in "Me" -> "Profile" (tapping avatar image).
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatid04.jpg)
+
+5. The WeChat ID can be checked in "Me" (besides the avatar image).
 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechatid.jpg)
 
@@ -54,13 +63,19 @@ A WeChat ID is needed to bind the WeChat account as a developer. By default, a n
 
 Mini Programs can be found in "Discover" -> "Mini Program".
 
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/miniprogram.jpg)
+
 However, newly installed WeChat do not have this entrance to Mini Programs until you access to the first one by a QR code or link.
 
 Please try the following QR code to access a Mini Program.
+
+   ![image](https://www.wxappr.com/appdata/001/001207/qrcode.png?v=1)
 
 ## How to scan a QR code using WeChat?
 
 Go to "Discover" -> "Scan QR Code", allow WeChat to use your camera, and then scan the QR code. You can scan a QR code on an image in your album by tapping "Album".
 
-### More information and FAQs about WeChat can be found in WeChat Help Center.
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/discover-qr.jpg)
+   
+#### More information and FAQs about WeChat can be found in [WeChat Help Center](http://help.wechat.com/oshelpcenter/?lang=en&Channel=helpcenter).
 
