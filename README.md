@@ -10,7 +10,9 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 ### Installation on macOS
 1. Open the downloaded .dmg file.
 2. Drag the app to the application folder.
-3. Find the following icon in the application folder or Launchpad.
+3. Find this icon in the application folder or Launchpad.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechattoolicon.jpg)
 
 ### Installation on Windows
 1. Open the downloaded .exe file. If your system language is not Chinese, you may see messy characters, but the installation can still be completed.
@@ -31,11 +33,24 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 
 1. Download or clone this demo to a local folder (extract the archive file if needed).
 2. Launch the developer's tool and login by scanning the QR code using your WeChat app (your WeChat account need to be bound as a developer to a Mini Program developer's account).
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_qr.jpg)
+
 3. Select "Local Mini Program projects" (the upper one).
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_type.jpg)
+
 4. Click "+" to create a new project.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_new.jpg)
+
 5. Input AppID if you have got one. If you select "No AppID", the program cannot be previewed on a mobile device (but still, there is a preview in the developer's tool).
-6. Input a name of the project.
-7. Choose folder of the demo (which contains the file "app.js") as the project folder. If you want to start from an empty project, select an empty folder, and check "create a quick start project in the folder" if needed.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_newproj.jpg)
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_new_noid.jpg)
+
+6. Input a name of the project, and choose the demo's folder (which contains the file "app.js") as the project directory. 
+7. If you want to start from an empty project, then select an empty folder, and check "create a quick start project in the folder" if needed.
 
 ## How to test the demo in a smartphone
 
