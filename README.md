@@ -10,15 +10,27 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 ### Installation on macOS
 1. Open the downloaded .dmg file.
 2. Drag the app to the application folder.
-3. Find this icon in the application folder or Launchpad.
+3. Find the icon in the application folder or Launchpad.
 
-   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechattoolicon.jpg)
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_install.jpg)
 
 ### Installation on Windows
 1. Open the downloaded .exe file. If your system language is not Chinese, you may see messy characters, but the installation can still be completed.
-2. Click the following buttons to process.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_install_win01.jpg)
+
+2. Click the following button to process.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_install_win02.jpg)
+
 3. Modify the install folder from some messy characters to English, and then click the button to install.
-4. Find the following icon on your desktop.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_install_win03.jpg)
+
+4. Finish the installation and launch the developer's tool, or find the following icon on your desktop. ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/miniprogram-icon-win.png)
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_install_win04.jpg)
+
 
 ## How to become a developer of Mini Program and get an AppID
 
@@ -34,7 +46,7 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 1. Download or clone this demo to a local folder (extract the archive file if needed).
 2. Launch the developer's tool and login by scanning the QR code using your WeChat app (your WeChat account need to be bound as a developer to a Mini Program developer's account).
 
-   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_qr.jpg)
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_qr_success.jpg)
 
 3. Select "Local Mini Program projects" (the upper one).
 
@@ -50,19 +62,34 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_new_noid.jpg)
 
 6. Input a name of the project, and choose the demo's folder (which contains the file "app.js") as the project directory. 
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_newproj_demofolder.jpg)
+
 7. If you want to start from an empty project, then select an empty folder, and check "create a quick start project in the folder" if needed.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_newproj_newfolder.jpg)
 
 ## How to test the demo in a smartphone
 
 1. Choose the "Project" label, and click the "Preview" button.
-2. Scan the QR code using the WeChat app (the WeChat account need to be bound as a developer to a Mini Program developer's account).
-3. Tap the "Confirm" button in WeChat and it will launch the mini program
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_project_preview01.jpg)
+
+2. Scan the QR code using the WeChat app: "Discover" -> "Scan QR Code", and the mini program will launch in your WeChat. (The WeChat account need to be bound as a developer to a Mini Program developer's account.)
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_project_preview02.jpg)
+
+3. If you want to access the preview version in WeChat again later, it can be found in "Discover" -> "Mini Programs".
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechat-miniprogram-preview.jpg)
 
 ## Why the map is not correctly displayed in the preview
 
 The map API of WeChat uses ***Tencent Maps*** by default, which only provides detailed data in China. In WeChat app, it will automatically switch to ***Bing Maps***, if the user is out of China. However, in the preview of the developer's tool, only Tencent Maps is available.
 
-If the demo is previewed in a smartphone, the map should be correctly displayed.
+If the demo is previewed in a smartphone, the map should be correctly displayed as follows.
+
+   ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechat-miniprogram-preview-map-s.jpg)
 
 ## How to partly import the resources or code files into an existing project
 There is no explict button or menu item to import files. Instead, you can directly copy the files or folders in to the project folder in the hard disk. The files or folders will be displayed in the file tree of the developer's tool.
