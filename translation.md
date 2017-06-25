@@ -1,8 +1,8 @@
 # Translation and simple manual of the developer's tool for WeChat Mini Program
 
-* [0. Introduction](#0-Introduction)  
-* [1. Login](#1-Login)  
-* [2. Create/open a project](#1-Login)  
+* [0. Introduction](#0-introduction)  
+* [1. Login](#1-login)  
+* [2. Create/open a project](#2-createopen-a-project)  
 
 ## 0. Introduction
 
