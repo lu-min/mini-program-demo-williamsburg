@@ -136,7 +136,20 @@ Page({
           //if the user confirms the removal of all trajectory data
           //initialize the array "trajectories"
           trajectories = []
-
+          
+          //if trajectory recording is enabled
+          //add a new empty trajectory immediately
+          if (trajectoryRecordEnabled) {
+            //initialize a new trajectory (empty)
+            var trajectory = {
+              points: [],           //coordinates of the recorded locations in {longitude, latitude}
+              color: "#115740DD",   //the official color of William & Mary
+              width: 3,             //line width
+              dottedLine: true      //dotted line (true) or solid line (false)
+            }
+            trajectories.push(trajectory)
+          }
+          
           //reset the local storage with the empty array "trajectories"
           //see "https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstorageobject"
           wx.setStorage({
