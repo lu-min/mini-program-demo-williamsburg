@@ -1,4 +1,4 @@
-# Translation and simple manual of the developer's tool for WeChat Mini Program
+# Translation of WeChat Developer's Tool for Mini Programs
 
 * [0. Introduction](#0-introduction)  
 * [1. Login](#1-login)  
