@@ -1,5 +1,12 @@
 # WeChat Q&A
 
+* [Where to download and install WeChat?](#where-to-download-and-install-wechat)
+* [How to sign up a WeChat account?](#how-to-sign-up-a-wechat-account)
+* [How to setup a WeChat ID?](#how-to-setup-a-wechat-id)
+* [Where to find Mini Programs?](#where-to-find-mini-programs)
+* [How to scan a QR code using WeChat?](#how-to-scan-a-qr-code-using-wechat)
+* [Official WeChat FAQs](#official-wechat-faqs)
+
 ## Where to download and install WeChat?
 
 iOS: [App Store](https://appsto.re/us/S8gTy.i)
@@ -77,5 +84,6 @@ Go to "Discover" -> "Scan QR Code", allow WeChat to use your camera, and then sc
 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/discover-qr.jpg)
    
-#### More information and FAQs about WeChat can be found in [WeChat Help Center](http://help.wechat.com/oshelpcenter/?lang=en&Channel=helpcenter).
+## Official WeChat FAQs
+More information and FAQs about WeChat can be found in [WeChat Help Center](http://help.wechat.com/oshelpcenter/?lang=en&Channel=helpcenter).
 
