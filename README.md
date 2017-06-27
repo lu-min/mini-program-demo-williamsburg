@@ -1,6 +1,29 @@
 # mini-program-demo-williamsburg
+
+* [Purpose](#purpose)
+* [Functions (Objectives of the coding session)](#functions-objectives-of-the-coding-session)
+* [How to install the developer's tool of WeChat Mini Program](#how-to-install-the-developers-tool-of-wechat-mini-program)
+  * [Download the installation file](#download-the-installation-file)
+  * [Installation on macOS](#installation-on-macos)
+  * [Installation on Windows](#installation-on-windows)
+* [How to become a developer of Mini Program and get an AppID](#how-to-become-a-developer-of-mini-program-and-get-an-appid)
+* [How to open this demo in the developer's tool](#how-to-open-this-demo-in-the-developers-tool)
+* [How to test the demo in a smartphone](#how-to-test-the-demo-in-a-smartphone)
+* [Why the map is not correctly displayed in the simulator](#why-the-map-is-not-correctly-displayed-in-the-simulator)
+* [How to partly import the resources or code files into an existing project](#how-to-partly-import-the-resources-or-code-files-into-an-existing-project)
+
 ## Purpose
 This demo is built for the coding presentation entitled "Coding for Map Applications on the Platform of WeChat Mini Programs" in the pre-conference workshop of ICC2017 in Williamsburg, VA, on June 30, 2017.
+
+## Functions (Objectives of the coding session)
+1. Display the map around Williamsburg VA.
+2. Setup a map control to center the user's current location.
+3. Display some POIs with different icons on the map.
+4. Tap the POI to show its information and a photo. (Optional)
+5. Record and show the user's moving trajectory. (Optional)
+
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/miniprogram-functions.jpg)
+
 
 ## How to install the developer's tool of WeChat Mini Program
 ### Download the installation file
@@ -83,7 +106,7 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechat-miniprogram-preview.jpg)
 
-## Why the map is not correctly displayed in the preview
+## Why the map is not correctly displayed in the simulator
 
 The map API of WeChat uses ***Tencent Maps*** by default, which only provides detailed data in China. In WeChat app, it will automatically switch to ***Bing Maps***, if the user is out of China. However, in the preview of the developer's tool, only Tencent Maps is available.
 
@@ -92,9 +115,9 @@ If the demo is previewed in a smartphone, the map should be correctly displayed 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/wechat-miniprogram-preview-map-s.jpg)
 
 ## How to partly import the resources or code files into an existing project
-There is no explict button or menu item to import files. Instead, you can directly copy the files or folders in to the project folder in the hard disk. The files or folders will be displayed in the file tree of the developer's tool.
+There is no explict button or menu item to import files. Instead, you can **directly copy the files or folders** in to the project folder in the hard disk. The files or folders will be displayed in the file tree of the developer's tool.
 
-If you manually imported (copied) files of a page, do not forget to include the path of the page in "app.json" as follows:
+If you manually imported (copied) files of a page, do not forget to include the path of the page in "app.json" as the following example:
 ``` json
 "pages": [
     "pages/index/index",
