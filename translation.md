@@ -122,12 +122,25 @@ In the **调试 (Debug)** tab, most things are in English.
 
 ## 6. Settings
 
-Click **微信web开发者工具 (WeChat web developer's tool)** -> **设置 (settings)** in the main menu, and it will show the settings with three tabs: **编辑器 (Editor)**, **代理 (Proxy)** and **通知 (Notification)**, from up to bottom.  
+* #### In macOS version  
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_menu01.jpg)
+
+* #### In Windows version  
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_menu_settings_win.jpg)
+
+
+Click **微信web开发者工具 (WeChat web developer's tool)** -> **设置 (settings)** in the main menu of macOS version, or directly click **设置 (settings)** in the main menu of the Windows version, and it will show the settings with three tabs: **编辑器 (Editor)**, **代理 (Proxy)** and **通知 (Notification)**, from up to bottom.  
 Usually, we do not need to change the settings of **Proxy** and **Notification**. The **Editor** tab is translated as the following images.  
+
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_settings.jpg)
 
 ## 7. Menu items
 
+* #### In macOS version  
 ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_menu.jpg)
+
+* #### In Windows version  
+![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_menu_win.jpg)
 
 ### 7.1 WeChat web developer's tool
 
