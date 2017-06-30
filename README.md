@@ -58,7 +58,7 @@ This demo is built for the coding presentation entitled "Coding for Map Applicat
 ## How to become a developer of Mini Program and get an AppID
 
 **UNFORTUNATELY**, Mini Program registration is not open to foreigners yet. However, as one Mini Program developer's account can bind multiple developers, we can still experience programming Mini Programs by binding your WeChat IDs to our prepared developer's accounts.
-1. Submit your WeChat ID and Email address to us using this [Google Form](https://goo.gl/forms/ozCPPoez2gVE3qrY2). (See [How to setup a WeChat ID?](https://github.com/lu-min/mini-program-demo-williamsburg/blob/master/WeChat%20Q%26A.md#how-to-setup-a-wechat-id) if you do not know your id yet.)
+1. Submit your WeChat ID and Email address to us using this [Google Form](https://goo.gl/forms/ozCPPoez2gVE3qrY2). (See [How to setup a WeChat ID?](/docs/WeChat%20Q%26A.md#how-to-setup-a-wechat-id) if you do not know your id yet.)
 2. We will bind your WeChat ID to a developer's account, and a request of confirmation (in Chinese) will be automatically sent to your WeChat. Please confirm the request as the following figures, and the binding will be completed.
 3. We will send the AppID to your Email address after completing the binding.
 
