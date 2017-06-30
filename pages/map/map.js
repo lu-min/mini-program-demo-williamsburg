@@ -2,8 +2,8 @@ var windowHeight = 0  //height of the display area of the mini program (px)
 var windowWidth = 0   //width of the display area of the mini program (px)
 var mapdata = require('../../data/mapdata.js')  //import the map data
 
-//array of the controls of the map module
-//controls will be displayed on top of the map module
+//array of the controls of the map component
+//controls will be displayed on top of the map component
 //with fix positions
 var controls = [{
   //this control will center the user's current location
@@ -18,7 +18,7 @@ var controls = [{
   clickable: true   //is the control clickable
 }]
 
-var trajectories = []   //array of trajectories for displaying polylines in the map module
+var trajectories = []   //array of trajectories for displaying polylines in the map component
 var trajectoryRecordEnabled = false //flag of enable/disable trajectory recording
 var timer   //for the loop of recording locations
 
@@ -42,8 +42,8 @@ function recordEveryTenSeconds(that) {
 Page({
   //initialize page data
   data: {
-    mapHeight: 600,   //height of the map module (px)
-    mapWidth: 375,    //width of the map module (px)
+    mapHeight: 600,   //height of the map component (px)
+    mapWidth: 375,    //width of the map component (px)
     bottomHeight: 64, //height of the bottom part (px)
     bottomWidth: 375, //width of the bottom part (px)
     markers: mapdata.points,  //markers (POIs) on the map (array)
@@ -56,7 +56,7 @@ Page({
     //get which control is clicked by its id
     if (e.controlId == 1) { //this control should center the user's current location
 
-      //get the map context through the map module's id defined in wxml
+      //get the map context through the map component's id defined in wxml
       //see "https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-map.html#wxcreatemapcontextmapid"
       var mapContext = wx.createMapContext("map")
 
@@ -82,7 +82,7 @@ Page({
     windowHeight = sysinfo.windowHeight
     windowWidth = sysinfo.windowWidth
 
-    //define the size of the map module
+    //define the size of the map component
     var mapWidth = windowWidth
     var mapHeight = windowHeight * 0.9
 
