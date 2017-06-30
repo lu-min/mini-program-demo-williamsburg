@@ -1,5 +1,5 @@
 var data = {
-  //points of interests (markers in the map module)
+  //points of interests (markers in the map component)
   points: [
     {
       iconPath: "/resources/poi.png", //image file path of the icon for the POI (marker)
