@@ -61,7 +61,7 @@ After creating a new project by clicking **"Add project"** in the previous view,
 An important function in the **Project** tab is to preview the mini program on a mobile device using your WeChat. (Your WeChat account need to be bound as a developer to a Mini Program developer's account.)
 
 ### 3.2 Preview in mobile device
-Click the **"Preview"** button, and it will show a QR code. Scan the QR code using your WeChat app: **"Discover" -> "Scan QR Code"** (see [here](https://github.com/lu-min/mini-program-demo-williamsburg/blob/master/WeChat%20Q%26A.md#how-to-scan-a-qr-code-using-wechat) if you do not know how), and the mini program will launch in your WeChat.
+Click the **"Preview"** button, and it will show a QR code. Scan the QR code using your WeChat app: **"Discover" -> "Scan QR Code"** (see [here](/docs/WeChat%20Q%26A.md#how-to-scan-a-qr-code-using-wechat) if you do not know how), and the mini program will launch in your WeChat.
 
 ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_project_preview.jpg)
 
