@@ -2,7 +2,7 @@
 
 ## 1. Create a quick start project
 
-See [2. Create/open a project](/translation.md/#2-createopen-a-project) in [translation.md](/translation.md).
+See [2. Create/open a project](/docs/translation.md/#2-createopen-a-project) in [translation.md](/docs/translation.md).
 
    ![image](http://portland.csis.u-tokyo.ac.jp/images/miniprogram/ide_newproj_newfolder.jpg)
 
