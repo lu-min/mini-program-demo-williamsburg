@@ -4,7 +4,18 @@
 * [2. Add a button](#2-add-a-button)
 * [3. Add a new page to show a map](#3-add-a-new-page-to-show-a-map)
 * [4. Add an event of tapping the button, and navigate to the page *map*](#4-add-an-event-of-tapping-the-button-and-navigate-to-the-page-map)
-* []
+* [5. Add a map component to the page *map*](#5-add-a-map-component-to-the-page-map)
+* [6. Add image resouces of icons to the project](#6-add-image-resouces-of-icons-to-the-project)
+* [7. Add a control to the map for centering the current location](#7-add-a-control-to-the-map-for-centering-the-current-location)
+* [8. Add map data to the project](#8-add-map-data-to-the-project)
+* [9. Add POIs to the map](#9-add-pois-to-the-map)
+* [10. Add an event handler for showing the page *poi* when tapping the callout of a POI on the map](#10-add-an-event-handler-for-showing-the-page-poi-when-tapping-the-callout-of-a-poi-on-the-map)
+* [11. Add a new page to show information of a POI](#11-add-a-new-page-to-show-information-of-a-poi)
+* [12. Add a switch for turning on/off trajectory recording in the page *map* with a text label](#12-add-a-switch-for-turning-onoff-trajectory-recording-in-the-page-map-with-a-text-label)
+* [13. Add functions to record the current location every ten seconds](#13-add-functions-to-record-the-current-location-every-ten-seconds)
+* [14. Add polylines to the map to display the trajectoies](#14-add-polylines-to-the-map-to-display-the-trajectoies)
+* [15. Add a button and the function to clear all trajectories](#15-add-a-button-and-the-function-to-clear-all-trajectories)
+* [16. Store, retieve and remove the trajectory data in local storage](#16-store-retieve-and-remove-the-trajectory-data-in-local-storage)
 
 ## 1. Create a quick start project
 
@@ -482,7 +493,7 @@ Page({
 })
 ```
 
-## 15. Add a button and the function to clear all trajectories.
+## 15. Add a button and the function to clear all trajectories
 1. Add a `<button>` component below the map, besides the `<switch>`, in `map.wxml`. An event handler `bindtap="clearTap"` is defined.
 ```xml
 <view class="bottom-container" style="height: {{bottomHeight}}px; width: {{bottomWidth}}px">
