@@ -1,5 +1,11 @@
 # mini-program-demo-williamsburg-step-by-step
 
+* [1. Create a quick start project](#1-create-a-quick-start-project)
+* [2. Add a button](#2-add-a-button)
+* [3. Add a new page to show a map](#3-add-a-new-page-to-show-a-map)
+* [4. Add an event of tapping the button, and navigate to the page *map*](#4-add-an-event-of-tapping-the-button-and-navigate-to-the-page-map)
+* []
+
 ## 1. Create a quick start project
 
 See [2. Create/open a project](/docs/translation.md/#2-createopen-a-project) in [translation.md](/docs/translation.md).
@@ -54,7 +60,7 @@ Page({
 ```
 Here `wx.navigateTo` is a WeChat API for navigating to a page of the given parameter `url`. which should be the path of a page in this project. See [wx.navigateTo]() the official documentation.
    
-## 4. Add a map component to the page *map*
+## 5. Add a map component to the page *map*
 1. Add a component `<map>` in `map.js` with its initial location in Williamsburg VA `longitude="-76.7086887360" latitude="37.2765457035"`. The setting `show-location="true"` enables the display of the current location.
 ```xml
 <view style="height: {{mapHeight}}px; width: {{mapWidth}}px">
@@ -109,10 +115,10 @@ Page({
 ```
 4. The map may not be displayed in the simulator, but will be displayed correctly in the preview on WeChat. See [How to test the demo in a smartphone](/README.md/#how-to-test-the-demo-in-a-smartphone) and [Why the map is not correctly displayed in the simulator](/README.md/#why-the-map-is-not-correctly-displayed-in-the-simulator) in [README.md](/README.md).
 
-## 5. Add image resouces of icons to the project
+## 6. Add image resouces of icons to the project
 Directly copy the folder `resources` of the repository into the root folder of this project on your hard disk.
 
-## 6. Add a control to the map for centering the current location
+## 7. Add a control to the map for centering the current location
 1. Add an attribute  `controls` to `<map>` in `map.wxml` and bind to page data `{{controls}}`. Bind the event handler of tapping the controls as `bindcontroltap="controltap"`.
 ```xml
 <view class="map-container" style="height: {{mapHeight}}px; width: {{mapWidth}}px">
@@ -199,14 +205,14 @@ Page({
 })
 ```
 
-## 7. Add map data to the project
+## 8. Add map data to the project
 1. Directly copy the folder `data` of the repository into the root folder of this project on your hard disk.
 2. Import the data of POIs from `data/mapdata.js` to `map.js` as follows. Then, the data of the POIs can be referred as `mapdata.points.`
 ```js
 var mapdata = require('../../data/mapdata.js')  //import the map data
 ```
 
-## 8. Add POIs to the map
+## 9. Add POIs to the map
 
 1. Add an attribute `markers={{points}}` to `<map>` in `map.wxml`.
 ```xml
@@ -226,7 +232,7 @@ Page({
 })
 ```
 
-## 9. Add an event handler for showing the page *poi* when tapping the callout of a POI on the map
+## 10. Add an event handler for showing the page *poi* when tapping the callout of a POI on the map
 1. Add an event handler `bindcallouttap="calloutTap"` in `<map>` of `map.wxml`.
 ```xml
 <map id="map" longitude="-76.7086887360" latitude="37.2765457035" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindcallouttap="calloutTap" show-location="true" style="height: 100%; width: 100%"></map>
@@ -247,7 +253,7 @@ Page({
 ```
 3. The `url` is set to a new page `poi` to be created, and a parameter `id` is sent to the page.
 
-## 10. Add a new page to show information of a POI
+## 11. Add a new page to show information of a POI
 
 1. Right click the folder `page` in the **File Tree**, select **新建(New)** -> **Page**, enter the page's name as `poi`
 2. In `poi.wxml` add a `<text>` for the title of the POI and a `<image>` for its image.
@@ -299,7 +305,7 @@ Page({
 })
 ```
 
-## 11. Add a switch for turning on/off trajectory recording in the page *map* with a text label
+## 12. Add a switch for turning on/off trajectory recording in the page *map* with a text label
 1. Add a component `<switch>` and a `<text>` in a container view, which captures the rest 10% of the page `map.wxml` at the bottom.
 ```
 <view class="bottom-container" style="height: {{bottomHeight}}px; width: {{bottomWidth}}px">
@@ -340,7 +346,7 @@ Page({
 ```
 See [switch](https://mp.weixin.qq.com/debug/wxadoc/dev/component/switch.html) in the official documentation for more details.
 
-## 12. Add functions to record the current location every ten seconds
+## 13. Add functions to record the current location every ten seconds
 1. Add a function `recordLocation` in the page of `map.js`. It will callback the WeChat API `wx.getLocation` to get the current location.
 ```js
 Page({
@@ -402,7 +408,7 @@ function recordEveryTenSeconds(that) {
     }    
   },
 ```
-## 13. Add polylines to the map to display the trajectoies
+## 14. Add polylines to the map to display the trajectoies
 1. Add an attribute `polyline="{{polyline}}"` in `<map>` of `map.wxml`.
 ```xml
 <map id="map" longitude="-76.7086887360" latitude="37.2765457035" scale="15" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" polyline="{{polyline}}"  bindcallouttap="calloutTap" show-location="true" style="height: 100%; width: 100%"></map>
@@ -476,7 +482,7 @@ Page({
 })
 ```
 
-## 14. Add a button and the function to clear all trajectories.
+## 15. Add a button and the function to clear all trajectories.
 1. Add a `<button>` component below the map, besides the `<switch>`, in `map.wxml`. An event handler `bindtap="clearTap"` is defined.
 ```xml
 <view class="bottom-container" style="height: {{bottomHeight}}px; width: {{bottomWidth}}px">
@@ -540,7 +546,7 @@ Page({
   },
 ```
 
-## 15. Store, retieve and remove the trajectory data in local storage
+## 16. Store, retieve and remove the trajectory data in local storage
 If we want to keep the trajectory data in the local storage of the mini program when it is turned off, and retrieve the data the next time it is launched, we can try the WeChat APIs like [wx.setStorage](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstorageobject), [wx.setStorageSync](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxsetstoragesynckeydata), [wx.getStorage](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstorageobject), [wx.getStorageSync](https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html#wxgetstoragesynckey), and so on.  
 See https://mp.weixin.qq.com/debug/wxadoc/dev/api/data.html for more information.
 
